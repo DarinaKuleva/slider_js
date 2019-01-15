@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <title>slider</title>
+  </head>
+  <body>
+    <div id="main" class="slider">
+      <input type="image" src="img/next.svg" onclick="Slider.Left();" class="slider-btn btn-left">
+      <article id="reviews" class="reviews">
+        <section class="review-item review-left">
+          <div id="imgLeft" class="review-img"></div>
+          <div id="nameLeft" class="review-name"></div>
+          <div id="commentLeft" class="review-comment"></div>
+          <div id="scoreLeft"></div>
+        </section>
+        <section class="review-item review-center">
+          <div id="imgCenter" class="review-img"></div>
+          <div id="nameCenter" class="review-name"></div>
+          <div id="commentCenter" class="review-comment"></div>
+          <div id="parentElement">
+            <div id="scoreCenter"></div>
+          </div>
+        </section>
+        <section class="review-item review-right">
+          <div id="imgRight" class="review-img"></div>
+          <div id="nameRight" class="review-name"></div>
+          <div id="commentRight" class="review-comment"></div>
+          <div id="parentElement">
+            <div id="scoreRight"></div>
+          </div>
+        </section>
+      </article>
+      <input type="image" src="img/next.svg" onclick="Slider.Right();" class="slider-btn btn-right">
+    </div>
+  </body>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slider.js"></script>
+</html>
