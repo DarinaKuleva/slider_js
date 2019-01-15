@@ -35,8 +35,6 @@ let CountLeft = 0;
 let CountCenter = 1;
 let CountRight = 2;
 const SliderLength = 5;
-var count = 0;
-var coun = 1;
 
 let Slider = {
     SetLeft: function(image) {
@@ -50,7 +48,7 @@ let Slider = {
             $("#scoreLeft").empty();
        }
 
-       for (var i = 0; i < Feedback[CountLeft].Score; i++)
+       for (let i = 0; i < Feedback[CountLeft].Score; i++)
        {
            let StarString = '<img id="star" src="img/star.svg">';
            $("#scoreLeft").append(StarString);
@@ -67,7 +65,7 @@ let Slider = {
             $("#scoreCenter").empty();
        }
 
-       for (var i = 0; i < Feedback[CountCenter].Score; i++)
+       for (let i = 0; i < Feedback[CountCenter].Score; i++)
        {
            let StarString = '<img id="star" src="img/star.svg">';
            $("#scoreCenter").append(StarString);
@@ -83,7 +81,7 @@ let Slider = {
             $("#scoreRight").empty();
         }
 
-        for (var i = 0; i < Feedback[CountRight].Score; i++)
+        for (let i = 0; i < Feedback[CountRight].Score; i++)
         {
             let StarString =
             '<img id="star" src="img/star.svg">';
