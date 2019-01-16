@@ -108,7 +108,6 @@ let Slider = {
         this.SetLeft(`${Feedback[CountLeft].Url_photo}`);
         this.SetCenter(`${Feedback[CountCenter].Url_photo}`);
         this.SetRight(`${Feedback[CountRight].Url_photo}`);
-
     },
 
     Right: function() {
@@ -126,6 +125,7 @@ let Slider = {
         this.SetRight(`${Feedback[CountRight].Url_photo}`);
     }
 };
+
 
 
 window.onload = function() {
