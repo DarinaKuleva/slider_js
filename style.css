@@ -99,7 +99,7 @@
 }
 
 
-.slideRight{
+.slideRight {
     animation-name: slideRight;
     -webkit-animation-name: slideRight;
 
@@ -130,7 +130,7 @@
     }
 }
 
-.slideLeft{
+.slideLeft {
     animation-name: slideLeft;
     -webkit-animation-name: slideLeft;
 
