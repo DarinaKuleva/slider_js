@@ -108,7 +108,10 @@ let Slider = {
         this.SetLeft(`${Feedback[CountLeft].Url_photo}`);
         this.SetCenter(`${Feedback[CountCenter].Url_photo}`);
         this.SetRight(`${Feedback[CountRight].Url_photo}`);
-
+        $("#reviews").addClass("slideLeft");
+        setTimeout(function(){
+            $("#reviews").removeClass("slideLeft");
+        }, 600);
     },
 
     Right: function() {
@@ -124,8 +127,19 @@ let Slider = {
         this.SetLeft(`${Feedback[CountLeft].Url_photo}`);
         this.SetCenter(`${Feedback[CountCenter].Url_photo}`);
         this.SetRight(`${Feedback[CountRight].Url_photo}`);
+        $("#reviews").addClass("slideRight");
+        setTimeout(function(){
+            $("#reviews").removeClass("slideRight");
+        }, 600);
     }
 };
+
+
+
+
+
+
+
 
 
 window.onload = function() {
